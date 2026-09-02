@@ -63,3 +63,8 @@ A aplicação estará disponível em http://localhost:5173.
 
 ---
 
+![Demonstração do meu projeto](images/Account.png)
+![Demonstração do meu projeto](images/Home.png)
+![Demonstração do meu projeto](images/HomeInit.png)
+![Demonstração do meu projeto](images/SignIn.png)
+![Demonstração do meu projeto](images/SignUp.png)
