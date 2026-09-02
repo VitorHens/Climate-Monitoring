@@ -1,0 +1,213 @@
+:root {
+  --bg: #0b1e3d;
+  --search-color: #1b2d4f;
+  --hover: #27406b;
+  --primary: #007bff;
+  --primary-dark: #0056b3;
+  --text: #ffffff;
+  --muted: #aaa;
+  --radius: 12px;
+  --transition: 0.3s ease;
+}
+
+/* Layout principal */
+.home-container {
+  background-color: var(--bg);
+  min-height: 100vh;
+  color: var(--text);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Cabeçalho */
+.home-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.home-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.user-info {
+  margin-top: 5px;
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.user-info:hover {
+  color: var(--primary);
+}
+
+/* Barra de pesquisa */
+.search-bar {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 15px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: var(--radius) 0 0 var(--radius);
+  background-color: var(--search-color);
+  color: var(--text);
+  outline: none;
+  font-size: 1rem;
+}
+
+.search-bar input::placeholder {
+  color: var(--muted);
+}
+
+.search-bar button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  background-color: var(--primary);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color var(--transition);
+}
+
+.search-bar button:hover {
+  background-color: var(--primary-dark);
+}
+
+/* Sugestões de cidades */
+.city-suggestions {
+  background-color: var(--search-color);
+  border-radius: var(--radius);
+  margin-top: 8px;
+  padding: 6px 0;
+  max-width: 500px;
+  width: 100%;
+  list-style: none;
+}
+
+.suggestion-item {
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color var(--transition);
+}
+
+.suggestion-item:hover {
+  background-color: var(--hover);
+}
+
+/* Área de conteúdo */
+.content {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background-color: var(--search-color);
+  padding: 20px;
+  border-radius: var(--radius);
+}
+
+.sidebar h3 {
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.city-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.city-list li {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  background-color: var(--bg);
+  transition: background-color var(--transition), color var(--transition);
+}
+
+.city-list li:hover {
+  background-color: var(--hover);
+}
+
+.city-list li.selected-city {
+  background-color: var(--primary);
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Conteúdo principal */
+.main-content {
+  flex: 1;
+  background-color: var(--search-color);
+  padding: 20px;
+  border-radius: var(--radius);
+  overflow-y: auto;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 50px 20px;
+  color: var(--muted);
+}
+
+.empty-state h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: var(--text);
+}
+
+.empty-state h2 span {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.empty-state p {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: #ecf7ff;
+}
+
+
+/* Histórico de alertas */
+.city-alerts-history {
+  margin-top: 25px;
+}
+
+.city-alerts-history h3 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.alerts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.alert-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: var(--radius);
+  background-color: var(--bg);
+  transition: background-color var(--transition);
+}
+
+.alert-item:hover {
+  background-color: var(--hover);
+}
