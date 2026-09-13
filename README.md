@@ -1,70 +1,44 @@
-# Climate Monitoring
+# 🌦️ Climate Monitoring
 
-Esta é uma aplicação web desenvolvida para monitorar as condições climáticas em tempo real com base na localização pesquisada pelo usuário. O projeto permite que os usuários se cadastrem, façam login e salvem cidades para receber alertas meteorológicos.
+Aplicação full stack para monitoramento de condições climáticas, com cadastro de usuários, login, pesquisa de cidades, histórico e armazenamento de cidades favoritas.
 
----
+## 🚀 Tecnologias
 
-## 🚀 Tecnologias Utilizadas
-
-- **Frontend**: React, TypeScript, Vite  
-- **Backend**: Node.js, Express, Mongoose  
-- **Banco de Dados**: MongoDB  
-
----
-
-## 📦 Instalação
-
-Para rodar o projeto localmente, siga os passos abaixo:
-
-
-
-### 1. Navegue até o diretório do projeto
-```bash
-cd Climate-Monitoring
-```
-
-### 2. Instale as dependências do Backend
-```bash
-cd backend
-npm install
-```
-
-### 3. Configure o Banco de Dados
-- Crie um cluster no MongoDB Atlas ou instale o MongoDB localmente.
-- Atualize o arquivo `.env` na pasta `backend` com sua URI do MongoDB.
-
-### 54 Inicie o servidor Backend
-```bash
-npm start
-```
-
-### 5. Instale as dependências do Frontend
-```bash
-cd frontend
-npm install
-```
-
-### 6. Inicie o servidor de desenvolvimento do Frontend
-```bash
-npm run dev
-```
-
-A aplicação estará disponível em http://localhost:5173.
-
----
+- React
+- TypeScript
+- Vite
+- Node.js
+- Express
+- MongoDB
+- Mongoose
 
 ## 🔧 Funcionalidades
 
 - Cadastro e login de usuários
-- Monitoramento em tempo real do clima via API
-- Salvar cidades para verificar os dados meteorológicos
-- Histórico para cada cidade salva
-- Interface intuitiva e responsiva
+- Consulta de clima por cidade
+- Salvamento de cidades
+- Histórico de informações meteorológicas
+- Interface responsiva
 
----
+## 📸 Screenshots
 
-![Demonstração do meu projeto](images/Account.png)
-![Demonstração do meu projeto](images/Home.png)
-![Demonstração do meu projeto](images/HomeInit.png)
-![Demonstração do meu projeto](images/SignIn.png)
-![Demonstração do meu projeto](images/SignUp.png)
+### Página inicial
+![Página inicial](images/HomeInit.png)
+
+### Dashboard
+![Dashboard](images/Home.png)
+
+### Login
+![Login](images/SignIn.png)
+
+### Cadastro
+![Cadastro](images/SignUp.png)
+
+### Conta
+![Conta](images/Account.png)
+
+## 🎯 Objetivo
+
+Praticar o desenvolvimento de uma aplicação full stack integrando frontend, backend e banco de dados.
+
+Desenvolvido por **Vitor Hens**.
